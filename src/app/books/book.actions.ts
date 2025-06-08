@@ -6,7 +6,7 @@ export const AddBook = createAction(
 );
 
 export const AddBookSuccess=createAction(
-  '[Book] Added Book Successfully', props<Book>
+  '[Book] Added Book Successfully', props<Book>()
 );
 
 export const AddBookFailure=createAction(
