@@ -11,6 +11,9 @@ export class BookService {
   constructor() { }
 
   addBook(book: Book): Observable<Book> {
+
+    const err=new Error('error test')
+    return throwError(()=> err)
     // Simulate a successful book addition
     return of(book);
   }
